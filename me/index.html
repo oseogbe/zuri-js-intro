@@ -7,13 +7,31 @@
 </head>
 <body>
     <div>
-        
+        <p>
+            Name: <span id="name"></span>
+        </p>
+        <p>
+            Height: <span id="height"></span>
+        </p>
+        <p>
+            Country: <span id="country"></span>
+        </p>
     </div>
 
     <script>
-        let name = "Osememen Ogbe";
-        let height = "6 foot 3 ins";
-        let country = "Nigeria";
+        let personalInfo = {
+            "name": "Osememen Ogbe",
+            "height": "6 foot 3 ins",
+            "country": "Nigeria"
+        }
+
+        // console.log(personalInfo.name)
+        // console.log(personalInfo.height)
+        // console.log(personalInfo.country)
+
+        document.querySelector("#name").innerHTML = personalInfo.name
+        document.querySelector("#height").innerHTML = personalInfo.height
+        document.querySelector("#country").innerHTML = personalInfo.country
     </script>
 </body>
 </html>
